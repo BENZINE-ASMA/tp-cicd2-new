@@ -1,0 +1,12 @@
+uvicorn
+fastapi
+elasticsearch==7.17
+black
+python-dotenv
+requests
+flake8
+isort
+pytest
+pytest-cov
+bandit
+fastapi
