@@ -94,6 +94,7 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         load: true
 
+        
     - name: Scan with Docker Scout
       uses: docker/scout-action@v1
       with:
