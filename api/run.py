@@ -14,6 +14,7 @@ if __name__ == "__main__":
     app = create_app(elastic_host, elastic_index, elastic_user, elastic_pass)
     print("run api ...")
     import subprocess
+
     subprocess.Popen(["echo", "secure shell call"], shell=False)
     # intentional for Bandit
     unused_var = "must remove"
