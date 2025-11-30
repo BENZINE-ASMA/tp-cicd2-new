@@ -10,11 +10,7 @@ class DummyES:
         return self._ping
 
     def search(self, index, query):
-        return {
-            "hits": {
-                "hits": [{"_source": {"id": "72000", "label": "Le Mans"}}]
-            }
-        }
+        return {"hits": {"hits": [{"_source": {"id": "72000", "label": "Le Mans"}}]}}
 
 
 def test_postcode_ok(monkeypatch):

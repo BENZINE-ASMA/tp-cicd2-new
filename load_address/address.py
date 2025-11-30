@@ -35,10 +35,6 @@ for adresse in adresses:
 
 requests.post(
     f"{ES_URL}/_aliases",
-    json={
-        "actions": [
-            {"add": {"index": f"{INDEX}-2022-12-07", "alias": f"{INDEX}"}}
-        ]
-    },
+    json={"actions": [{"add": {"index": f"{INDEX}-2022-12-07", "alias": f"{INDEX}"}}]},
     verify=False,
 )

@@ -3,9 +3,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 
-def create_app(
-    elastic_host, elastic_index, elastic_user=None, elastic_pass=None
-):
+def create_app(elastic_host, elastic_index, elastic_user=None, elastic_pass=None):
     print("starting api ...")
     elastic_host = elastic_host
     elastic_index = elastic_index
